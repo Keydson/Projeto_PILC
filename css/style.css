@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@font-face {
+	font-family: VALORANT;
+	src: url(../fonts/VALORANT-Regular.ttf)
+}
+
+:root{
+    --color-background-menu: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    --color-text-menu: #c5c3c6;
+    --color-text: #ccc5b9;
+    --font-size-text: calc(0.625rem + 0.5vw);
+    --font-size-title: calc(1rem + 0.5vw);
+    --font-size-title-big: calc(0.5rem + 2vw);
+}
+
+.clear{
+    clear: both;
+}
+
+body{
+    background-color: #252422;
+}
+
+header{
+    height: auto;
+    background-image: var(--color-background-menu);
+    text-align: center;
+    padding-bottom: 1%;   
+}
+
+.logo{
+    color: var(--color-text-menu);
+    padding-top: 15px;
+    font-size: 3rem;
+    font-family: VALORANT;
+}
+
+.separador{
+    border-top: solid var(--color-text-menu) 1px;
+    width: 95%;
+    margin: 0 auto;
+    background-image: var(--color-background-menu);
+}
+
+.barraNav{
+    background-image:  var(--color-background-menu);
+}
+
+nav{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-image: var(--color-background-menu);
+}
+
+.boxMenu{
+    padding: 10px 0 10px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.barSection{
+    border-right: 1px solid var(--color-text-menu);
+}
+
+.menu{
+    margin: 0 auto;
+    outline: 0;
+    color: var(--color-text-menu);
+    text-decoration: none;
+    margin: -1px;
+    width: calc(100%/4);
+    float: left;
+    font-size: var(--font-size-text);
+    white-space: nowrap;
+    font-weight: bolder;
+}
+
+footer{
+    height: 4rem;
+}
+
+section{
+    width: 90%;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 750px) {
+    .logo{
+        font-size: 2em;
+    }
+    .menu{
+        font-size: calc(0.325rem + 0.5vw);
+    }
+}

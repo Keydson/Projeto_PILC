@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/start.css" rel="stylesheet">
+    <link href="css/videos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/iconPage.png">
+    <title>Robotics Projects</title>
+</head>
+<body>
+    <header>
+        <h2 class="logo">Projetos com Robótica</h2>
+    </header>
+    <div class="barraNav">
+        <div class="separador"></div>
+        <nav>
+            <div class="boxMenu">
+                <div><a class="menu barSection" href="index.html">Página Inicial</a></div>
+                <div><a class="menu barSection" href="#">Começando</a></div>
+                <div><a class="menu barSection" href="exercicios.html">Exercícios Prontos</a></div>
+                <div><a class="menu" href="/PILC_Projeto/blockino/BlocklyDuino/blockly/apps/blocklyduino/index.html">Programação em Blocos</a></div>
+                <div class="clear"></div>
+            </div>
+        </nav> 
+    </div>
+
+    <section>
+        <div class="tituloVideo"><h2>Demostração do Robô Sparki</h2></div>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/btUfK64IYow" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+        </div>
+        <div class="descricao">
+            <p>O vídeo acima contém uma pequena demostração do que o robô Sparki é capaz de fazer, além do quanto é simples a estrutura do código para programar o Sparki, deixando fácil até mesmo para quem nunca viu programação.</p>
+            <p>Além de possuir uma estrutura de código simples, é possível também realizar a programção em blocos, tornando a codificação do Sparki ainda mais lúdica.</p>
+            <p>A programação em blocos nada mais é do que uma metodologia visualmente amigável e com um objetivo prático para o ensino dos conceitos iniciais ligados à programação, desenvolvimento de softwares/aplicativos e lógica de uma forma geral.</p>
+            <p>É fácil imaginar a infinidade de projetos que este pequeno robô pode realizar.</p>
+        </div>
+        <h2>Introdução ao Robô Sparki</h2>
+
+        <h1 class="topico">1º Passo - Desempacote seu Sparki, você encontrará os seguintes itens:</h1>
+        <div class="boxImage">
+            <img class="image" src="../PILC_Projeto/images/1passo.png" alt="1ºpasso">
+        </div>
+
+        <h1 class="topico">2º Passo - Instale as pilhas</h1>
+        <p class="descricaoPasso">Para que o Sparki se mova é necessário instalar 4 pilhas do tipo AA:</p>
+        <div class="boxImage" style="background-color: initial;">
+            <img class="image" src="../PILC_Projeto/images/2passo.jpg" alt="2ºpasso">
+        </div>
+
+        <h1 class="topico">3º Passo - Ligue o Sparki</h1>
+        <p class="descricaoPasso">Ligue o Sparki mudando a chave a alimentação de <i>off</i> para <i>on</i></p>
+        <div class="boxImage">
+            <img class="image" src="../PILC_Projeto/images/3passo.jpeg" alt="3ºpasso">
+        </div>
+
+        <h1 class="topico">4º Passo - Teste o controle remoto</h1>
+        <p class="descricaoPasso">Teste o Sparki usando o controle remoto. Primeiro, certifique-se de que a pequena aba de plástico de ativação foi removida da parte inferior do controle remoto.</p>
+        <p class="descricaoPasso">Sparki é pré-programado com um programa de exemplo que vagueia evitando paredes. Você pode interromper este programa pressionando <b>7</b> no controle remoto, o que permitirá que você use o controle normalmente, controlando assim o robô manualmente.</p>
+        <div class="boxImage">
+            <img class="image" src="../PILC_Projeto/images/4passo.png" alt="4ºpasso">
+        </div>
+        <h2 class="titleLegenda">Legenda:</h2>
+        <dl class="list firstColumn">
+            <dt>Move Backward</dt>
+                <dd>• Mover para trás</dd>
+            <dt>Turn Left</dt>
+                <dd>• Virar à esquerda</dd>
+            <dt>Move Forward</dt>
+                <dd>• Mover para frente</dd>
+            <dt>Turn Right</dt>
+                <dd>• Virar à direita</dd>
+            <dt>Stop</dt>
+                <dd>• Parar</dd>
+            <dt>Open Gripper</dt>
+                <dd>• Abrir a garra</dd>
+            <dt>Close Gripper</dt>
+                <dd>• Fechar garra</dd>
+            <dt>RGB</dt>
+                <dd>• 1:Vermelho</dd>
+                <dd>• 2:Verde</dd>
+                <dd>• 3:Azul</dd>
+        </dl>         
+        <dl class="list secondColumn">
+            <dt>Head Turns</dt>
+                <dd>• Virar cabeça</dd>
+                <dd>• 4 - Left: Esquerda</dt>
+                <dd>• 5 - Center: Centro</dd>
+                <dd>• 6 - Right: Direita</dd>
+            <dt>Stop Program</dt>
+                <dd>• 7 - Parar controle automático</dd>
+            <dt>Run Program</dt>
+                <dd>• 8 - Iniciar controle automático</dd>
+            <dt>Buzzer</dt>
+                <dd>• 9 - Buzina</dd>
+        </dl>
+        <div class="clear"></div>
+
+        <h1 class="topico">5º Passo - Instalando o software:</h1>
+        <p class="descricaoPasso">Exixtem 3 maneiras de programar o seu Sparki, a primeira é através de um software que está disponível para Windows, Linux e Mac, a segunda maneira é pelo próprio navegador, apesar de ainda estar em fase beta, é possível utilizá-la e por fim a programação em blocos, utilizadas geralmente por crianças entre 7-12 anos, porém pode ser utilizada por quem tem dificuldade em entender a lógica de programação e prefere programar de forma mais lúdica, infelizmente este software só está disponível para Windows.</p>
+        <div class="boxImage">
+            <img class="image" src="../PILC_Projeto/images/installSoftware.png" alt="5ºpasso">
+        </div>
+
+        <div class="divButton">
+            <a href="http://arcbotics.com/lessons/sparki-install-software/" target="_blank">
+                <input class="buttonSoft" type="submit" value="Escolha o seu Software">
+            </a>
+        </div>
+        
+    </section>
+    <footer></footer>
+</body>
+</html>
