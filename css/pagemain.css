@@ -1,18 +1,19 @@
-section{
-    background-image: url(../images/backgroundImage.jpg);
+body {
+    background-image: url(../images/backgroundIndex.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: #cccccc; /* Used if the image is unavailable */
+    background-color: #cccccc;
     background-position: center;
-    
 }
-.proposta, .publico > h1{
+
+.proposta,
+.publico>h1 {
     color: var(--color-text);
-    text-align:  center;
+    text-align: center;
     padding: 30px 0 10px 0;
 }
 
-p{
+p {
     color: var(--color-text);
     font-size: var(--font-size-text);
     text-align: justify;
@@ -22,6 +23,6 @@ p{
     line-height: 1.5em;
 }
 
-h1{
+h1 {
     font-size: var(--font-size-title);
 }

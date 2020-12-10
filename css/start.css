@@ -75,8 +75,7 @@ dt{
     text-align: center;
     outline: none;
     border: none;
-    border-radius: 10px;
-    background-color: var(--color-background-menu);
+    background-color: #302b63;
     color: var(--color-text-menu);
     font-size: var(--font-size-text);
     width: 15em;

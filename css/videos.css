@@ -4,6 +4,7 @@
     width:75%;
     margin: 0 auto;
     margin-top: 15px;
+    z-index: -1;
 }
 
 .video-container::after {

@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -6,11 +6,11 @@
 }
 
 @font-face {
-	font-family: VALORANT;
-	src: url(../fonts/VALORANT-Regular.ttf)
+    font-family: VALORANT;
+    src: url(../fonts/VALORANT-Regular.ttf)
 }
 
-:root{
+:root {
     --color-background-menu: linear-gradient(to right, #0f0c29, #302b63, #24243e);
     --color-text-menu: #c5c3c6;
     --color-text: #ccc5b9;
@@ -19,85 +19,57 @@
     --font-size-title-big: calc(0.5rem + 2vw);
 }
 
-.clear{
+.clear {
     clear: both;
 }
 
-body{
+body {
     background-color: #252422;
-    padding-left: 40px !important;
+    height: 100vh;
+    width: 100vw;
+    padding-left: 40px;
 }
 
-header{
-    height: auto;
+header {
+    height: 55px !important;
     background-image: var(--color-background-menu);
     text-align: center;
-    padding-bottom: 1%;   
-    padding-top: 20px;
+    padding-top: 5px;
 }
 
-.logo{
+h2 {
+    margin: 0 !important;
+}
+
+.logo {
     color: var(--color-text-menu);
-    padding-top: 25px;
-    font-size: 3rem;
+    font-size: 2rem !important;
     font-family: VALORANT;
+    padding-top: 5px !important;
 }
 
-.separador{
+.separador {
     border-top: solid var(--color-text-menu) 1px;
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
     background-image: var(--color-background-menu);
 }
 
-.barraNav{
-    background-image:  var(--color-background-menu);
-    height: 20px;
-}
-
-nav{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-image: var(--color-background-menu);
-}
-
-.boxMenu{
-    padding: 10px 0 10px 0;
-    text-align: center;
-    width: 100%;
-}
-
-.barSection{
+.barSection {
     border-right: 1px solid var(--color-text-menu);
 }
 
-.menu{
-    margin: 0 auto;
-    outline: 0;
-    color: var(--color-text-menu);
-    text-decoration: none;
-    margin: -1px;
-    width: calc(100%/4);
-    float: left;
-    font-size: var(--font-size-text);
-    white-space: nowrap;
-    font-weight: bolder;
-}
-
-footer{
+footer {
     height: 4rem;
 }
 
-section{
+section {
     width: 90%;
     margin: 0 auto;
 }
 
 @media only screen and (max-width: 750px) {
-    .logo{
+    .logo {
         font-size: 2em;
-    }
-    .menu{
-        font-size: calc(0.325rem + 0.5vw);
     }
 }
