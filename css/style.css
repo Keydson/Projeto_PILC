@@ -25,6 +25,7 @@
 
 body{
     background-color: #252422;
+    padding-left: 40px !important;
 }
 
 header{
@@ -32,24 +33,26 @@ header{
     background-image: var(--color-background-menu);
     text-align: center;
     padding-bottom: 1%;   
+    padding-top: 20px;
 }
 
 .logo{
     color: var(--color-text-menu);
-    padding-top: 15px;
+    padding-top: 25px;
     font-size: 3rem;
     font-family: VALORANT;
 }
 
 .separador{
     border-top: solid var(--color-text-menu) 1px;
-    width: 95%;
+    width: 80%;
     margin: 0 auto;
     background-image: var(--color-background-menu);
 }
 
 .barraNav{
     background-image:  var(--color-background-menu);
+    height: 20px;
 }
 
 nav{
