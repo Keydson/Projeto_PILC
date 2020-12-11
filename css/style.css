@@ -11,7 +11,7 @@
 }
 
 :root {
-    --color-background-menu: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    --color-background-menu: linear-gradient(to right, rgb(57, 15, 0), rgb(6, 4, 5), rgb(0, 63, 94));
     --color-text-menu: #c5c3c6;
     --color-text: #ccc5b9;
     --font-size-text: calc(0.625rem + 0.5vw);
@@ -28,6 +28,11 @@ body {
     height: 100vh;
     width: 100vw;
     padding-left: 40px;
+    background-image: url(../images/backgroundIndex.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 header {
