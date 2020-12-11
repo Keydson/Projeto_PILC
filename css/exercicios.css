@@ -98,3 +98,11 @@ dt{
         justify-content: center;
     }
 }
+
+.ementa{
+    color: var(--color-text);
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: var(--font-size-title-big);
+    text-align: left;
+}
