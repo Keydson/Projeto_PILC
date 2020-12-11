@@ -34,94 +34,23 @@
         <div class="separador"></div>
     </header>
     <section>
-        <h2 class="titlePage">Propostas de Exercícios</h2>
-        <h2 class="topico">Medindo distância utilizando ondas sonoras</h2>
-        <p>Aplicação das <b>ondas sonoras</b>, matéria de física, uitlizando o Sparki ou qualquer outra placa controladora.</p>
-        <p>O exercício proposto trata-se de medir a distância entre o nosso sensor ultrassônico e um objeto a sua frente utilizando altas frequências sonoras que são inaudíveis ao ouvido humano.</p>
+        <h2 class="titlePage">Oficinas Propostas</h2>
 
-        <h2 class="topico">Colocando em Prática</h2>
-        <p>O exercício todo irá se tratar apenas do que aparentam ser os "olhos" do Sparki(Figura 1), que na verdade é chamado de <b>Sensor Ultrassônico</b>. Um dos "olhos" é um alto-falante que emite uma onda sonora de alta frequência, enquanto o outro
-            é um alto-falante que capta essa onda sonora. Essa onda sonora tem uma frequência tão alta que nós humanos não somos capazes de escutá-la.</p>
-        <p>
-            Caso não tenha um sparki em mão, é possível realizar este exercício usando outra placa controladora, bastar ter o componente chamado de <b>Sensor Ultrassônico</b>(Figura 2)
-        </p>
-        <br>
+        <div>
 
-        <div class="boxImagePratic">
-            <div class="labelImage">
-                <img class="image" id="roboSparki" src="images/PictureSparki.png">
-                <label for="roboSparki">1.Sensor Ultrassônico presente no Sparki</label>
-            </div>
-            <div class="labelImage">
-                <img class="image" id="sensorUltra" src="images/sensorultrassonico.jpg">
-                <label for="sensorUltra">2.Sensor Ultrassônico</label>
-            </div>
+            <h3 class="ementa">Cronograma</h3>
+            <ul class="ementa">
+                <li><a href="of1.html">Oficina I - O que é um robô? (prof. fisíca)</a></li>
+                <li><a href="of2.html">Oficina II - Algoritmos (prof. matemática)</a></li>
+                <li><a href="of3.html">Oficina III - Comandos básicos de movimentação (prof. matemática)</a></li>
+                <li><a href="of4.html">Oficina IV - Variáveis (prof. matemática)</a></li>
+                <li><a href="of5.html">Oficina V - Condicionais (prof. matemática)</a></li>
+                <li><a href="of6.html">Oficina VI - Repetição (prof. matemática)</a></li>
+                <li><a href="of7.html">Oficina VII - Sensores Ultrassônicos (prof. fisíca)</a></li>
+            </ul>
         </div>
-
-        <h2 class="topico">Como é possível medir utilizando o som?</h2>
-        <br>
-        <p>O som em si não é o que realmente vai nos dar a resposta, mas sim o tempo em que ele vai levar para retornar até o microfone do sensor, essa informação de tempo é então utilizada para calcular a distância entre o sensor e o objeto a sua frente.</p>
-        <p>Pode ocorrer de não conseguirmos obter a distância entre o sensor e o objeto devido o objeto não estar bem posicionado ou se ele absorver todo o som, isso pode ocorrer quando o objeto é macio. Portanto é importante prestarmos atenção nestes fatores.</p>
-        <br>
-        <p>Como mostrado na figura abaixo, é necessário que o objeto seja capaz de refletir ondas sonoras.</p>
-        <img class="image" src="images/ondasonora.png">
-        <br>
-
-        <h2 class="topico">Aplicações no cotidiano</h2>
-        <br>
-        <p>A <b>Ultrassonografia</b> também conhecida por Ecografia e Ultrassom, é um exame de diagnóstico que serve para vizualizar em tempo real qualquer órgão ou tecido do corpo. Este exame é comumente usada para observar o desenvolvimento do feto durante
-            a gestação.</p>
-        <br>
-        <p>A <b>Ecolocalização</b> também conhecida como Bissonar, é muito importante na vida de diversos animais como morcegos, golfinhos e baleias, estes animais são capazes de emitir ondas de alta frequência e assim notar quando o eco da onda emitida
-            retorna, tornando-os capazes de conhecer seus arredores sem utilizar a visão.</p>
-        <br>
-        <p>Os <b>Sonares</b> são comumente utilizados por submarinos e navios para detectar outros navios e submarinos ou até mesmo obtáculos no meio do oceano, como icebergs.</p>
-        <br>
-
-        <h2 class="topico">Como utilizar o sensor ultrassônico do Sparki?</h2>
-        <br>
-        <p>Tudo que precisamos fazer é utilizar a função <code>sparki.ping()</code> que ela irá ativar o sensor. Como já dito, o sensor serve para medir a distância, então a função <code>sparki.ping()</code> faz os cálculos necessários e nos retorna um valor
-            indicando a distância em centímetros.</p>
-        <p>Para isso vamos precisar do seguinte código:</p>
-        <br>
-        <img class="image" src="images/codigoSparki.png">
-        <p>Após importarmos a biblioteca do Sparki com <code>#include < Sparki.h >;</code> declaramos uma variável do tipo inteira com <code>int distância_em_cm;</code> que ficará responsável por armazenar o valor que a nossa função irá retornar, e para
-            isso precisamos do <code>distância_em_cm = sparki.ping();</code>. É importante nortarmos a função <code>delay()</code> no código, ela não está ali atoa, precisamos dela pois o nosso robô processa os dados muito mais rápido do que o funcionamento
-            do sensor, e como o Sparki executa seus códigos em <i>looping</i>, é necessário esse atraso para que não lote o robô de requisições.</p>
-
-        <h2 class="topico">Como utilizar o sensor ultrassônico no Arduino?</h2>
-        <br>
-        <div class="list">
-            <dt>
-                Antes de tudo, precisamos montar o esquema, e para isso vamos precisar dos sequintes items:
-            </dt>
-            <dd>
-                • Arduino com Cabo USB
-            </dd>
-            <dd>
-                • Sensor Ultrasonico HC-SR04
-            </dd>
-            <dd>
-                • Protoboard
-            </dd>
-            <dd>
-                • Cabos Jumper macho-macho
-            </dd>
-        </div>
-
-        <h2 class="topico">Como deve ficar o esquema:</h2>
-        <img class="image imageSchema" src="images/mapaArduino.jpg">
-
-        <br>
-
-        <p>Agora que nosso esquema está pronto, basta implementarmo o seguinte código:</p>
-        <br>
-        <img class="image imageCode" src="images/CodeArduino.png">
-        <p>Diferente do Sparki que possui uma biblioteca com uma função para calcular a distância já implementada, precisamos implementar nós mesmo uma função para realizar o cálculo da distância entre o objeto e o sensor.
-        </p>
-        <p>
-            O código apesar de ser um pouquinho maior do que o do Sparki, ele é bastante simples e dispensa explicações pois o código já é auto-explicativo em si, devido aos diversos comentários presente em cada linha.
-        </p>
+        <!-- /#menu -->
+    </div>
 
     </section>
     <footer></footer>
