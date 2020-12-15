@@ -24,7 +24,6 @@ p {
     padding-right: 2%;
     padding-top: 1%;
     padding-bottom: 1%;
-    text-indent: 3%;
 }
 
 .collapsible {
@@ -54,4 +53,31 @@ p {
 
 .content>img {
     width: 50%;
+}
+
+audio{
+    width: 96%;
+    height: 20px;
+    margin-top: 30px;
+    outline: none;
+    filter: invert(100%);
+    opacity: 90%;
+}
+
+audio::-webkit-media-controls-panel{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    -webkit-user-select: none;
+    position: relative;
+    width: 100%;
+    z-index: 0;
+    overflow: hidden;
+    text-align: right;
+    bottom: auto;
+    height: 20px;
+    border-radius: 5px;
+    background: #c6f0ff;
+    transition: opacity 0.3s;
 }
