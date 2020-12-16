@@ -63,7 +63,9 @@ p {
 }
 
 .content>img {
-    width: 50%;
+    width: 20%;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 audio{
