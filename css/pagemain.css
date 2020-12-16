@@ -33,3 +33,7 @@ h1 {
     position: relative;
     transform: translateY(calc( 100vh * 0.1));
 }
+
+ident{
+    margin-left: 3%;
+}
