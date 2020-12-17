@@ -16,7 +16,7 @@ section>h2 {
     padding-bottom: 1%;
 }
 
-ul{
+.lista{
     text-align: left;
     color: var(--color-text);
     font-size: var(--font-size-text);

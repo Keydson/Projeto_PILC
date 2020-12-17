@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/exercicios.css" rel="stylesheet">
     <link href="css/menu.css" rel="stylesheet">
+    <link href="css/exercicios.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link rel="icon" href="images/iconPage.png">
     <title>Robotics Projects</title>
@@ -21,7 +21,6 @@
             <ul class="box">
                 <li><a href="index.html">Sobre o Projeto</a></li>
                 <li><a href="#">Oficinas Propostas</a></li>
-                <li><a href="start.html" class="subTopico">Métodos e Materiais</a></li>
                 <li><a href="blockino/BlocklyDuino/blockly/apps/blocklyduino/index.html">Programação em Blocos</a></li>
             </ul>
         </div>
@@ -40,7 +39,7 @@
         <button type="button" class="collapsible">Oficina I - O que é um robô?</button>
         <div class="content">
             <audio controls>
-                <source src="of1.ogg" type="audio/ogg">
+                <source src="/audios/of1.ogg" type="audio/ogg">
               Your browser does not support the audio element.
               </audio>
             <p>Tempo estimado para esta oficina: 40 minutos</p>
@@ -51,7 +50,7 @@
             <p>
                 Enquanto o objetivo geral é melhorar o desempenho dos alunos na escola como um todo, os objetivos especificos são:
             </p>
-            <ul>
+            <ul class="lista">
                 <li>
                     Ter um primeiro contato com esta área de programação e robótica;
                 </li>
@@ -116,11 +115,11 @@
             <p>O componente Sensor Ultrassônico (da figura abaixo) funciona como os "olhos" do robô, possuindo um alto-falante que emite uma onda sonora de alta frequência e um alto-falante que capta ondas sonoras.</p>
             <img src="images/sensorultrassonico.jpg" alt="">
             <p>Assim, é possível emitir ondas, que serão parcialmente refletidas de volta para o robô ao esbarrar com um objeto, conforme o esquema representado na figura abaixo. O robô é então capaz de medir o tempo que levou para a onda ir e voltar até ele, e como a velocidade da onda emitida pelo robô é constante, pode-se calcular a distância entre o robô e o objeto a frente dele.</p>
-            <img src="images/ondasonora.png" alt="">
+            <img src="images/ondasonora.png" style="width: 40%;">
             <p>Para fazer toda essa operação, e encontrar a distância que separa o robô do objeto a frente dele, utiliza-se o bloco de comando “Ultrassônico”, representado pela figura abaixo. Este bloco de comando traz então um valor que corresponde a esta distância em centímetros, que pode ser armazenado em uma variável. Neste momento, antes de entrar em exemplos práticos e para verificar se os alunos estão entendendo esta nova ferramenta, pode-se perguntar aos alunos como e em que situação se aplicaria esta nova funcionalidade.</p>
-            <img src="images/ultrassonico.png" alt="">
+            <img src="images/ultrassonico.png" style="width: 40%;">
             <p>Com este bloco de comando, pode-se programar o robô para parar de se movimentar caso encontre algum obstáculo ou contorna-lo. O código abaixo faz com que o robô ande até encontrar algum objeto a frente dele. Discuta bem a estrutura deste código com os alunos, e o seu funcionamento. Seguindo o passo a passo, tem-se que primeiro o robô calcula a distância entre ele e o objeto a frente dele e a armazena em uma variável chamada “dist”. Em seguida, por meio de uma condicional, verifica-se se a distância obtida é maior do que 10 centímetros. Caso a distância seja maior do que os 10 centímetros, o robô avança para frente por 5 segundos. Com isto, encerra-se a primeira iteração (lembra que o código recomeça?) e calcula-se novamente a distância, recomeçando o processo descrito anteriormente. Desta maneira, a sequência de comandos abaixo faz com que o robô ande até encontrar um obstáculo a menos de 10 centímetros, quando não se movimentará mais.</p>
-            <img src="images/exemplo_final.png" alt="">
+            <img src="images/exemplo_final.png" style="width: 50%;">
             <p>Por fim, como desafio final para os alunos resolverem conjuntamente, monte um labirinto simples para o robô atravessar. A ideia é que os alunos usem os blocos de comando apresentados e treinem os conceitos de condicionais e repetição.</p>
         </div>
     </section>
